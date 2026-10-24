@@ -11,13 +11,13 @@
 		{
 			"binding": "DB",
 			"database_name": "gmshop-edge",
-			"migrations_dir": "drizzle","database_id": "7d6150cb-a1c9-4cc2-8870-72464216cc5c"
+			"migrations_dir": "drizzle"
 		}
 	],
-	"r2_buckets": [{ "binding": "FILES", "bucket_name": "gmshop-edge-files","preview_bucket_name": "gmshop-edge-files" }],
+	"r2_buckets": [{ "binding": "FILES", "bucket_name": "gmshop-edge-files" }],
 	"send_email": [{ "name": "EMAIL" }],
 	"kv_namespaces": [
-		{ "binding": "CACHE","id": "4bacd87e061741cf98e71e22eb35deeb" }
+		{ "binding": "CACHE" }
 	],
 	"queues": {
 		"producers": [
