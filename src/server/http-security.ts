@@ -24,9 +24,11 @@ export function applySecurityHeaders(
 	// scripts those load); 'self'/https:/'unsafe-inline' remain as the fallback
 	// for older policy levels. Without a nonce (development server) inline
 	// scripts stay allowed.
-	const scriptSources = options.nonce
+	   const scriptSources = false /* CSP: TanStack Start inline stream boundary
+	      scripts carry no nonce; nonce+strict-dynamic would block them and blank
+	      the page */
 		? [
-				`'nonce-${options.nonce}'`,
+			    `'nonce-${false /* （同一注释被查找替换顺带替换到此处，属死代码） */}'`,
 				"'strict-dynamic'",
 				"'self'",
 				"'unsafe-inline'",
